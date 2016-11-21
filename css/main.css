@@ -139,7 +139,7 @@ form a:hover {
 	padding-left: 0;
 }
 
-#contact ul {
+#contact ul, nav ul {
 	padding-left: 0;
 }
 
@@ -651,6 +651,10 @@ nav li {
     width: 50%;
 }
 
+.col-1-6 {
+	width: 25%;
+}
+
 .col-1-2-lg {
 	width: 100%;
 }
@@ -658,7 +662,7 @@ nav li {
 3.2 - PARTIAL COLUMNS
 -------------------------------------------------------------- */
 .col-3-5 {
-	width: 75%;
+	width: 70%;
 }
 
 /*--------------------------------------------------------------
@@ -698,8 +702,12 @@ section.col-1-4:nth-child(2) {
 }
 
 #hero p {
-  padding: 30px;
+	
+	font-size: 4.5rem;	
+  	padding: 30px;
+  	line-height: 4.5rem;
 }
+
 
 /*--------------------------------------------------------------
 5.4 - ALIGNMENTS
