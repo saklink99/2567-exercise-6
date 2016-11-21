@@ -134,21 +134,31 @@ form a:hover {
 /*--------------------------------------------------------------
 1.5 - LISTS
 -------------------------------------------------------------- */
-dt {
-	display: inline-block
-}
-
-dd {
+#contact ul li {
 	display: inline;
+	padding-left: 0;
 }
 
-dt {
-	font-weight:100;
-	width: 20px;
+#contact ul {
+	padding-left: 0;
 }
-dd {
+
+
+
+li {
+	font-weight:100;
+}
+li span {
 	font-weight: 600;
 }
+
+li a {
+	text-decoration: none;
+	color: #ffffff; 
+}
+
+ 
+
 /*--------------------------------------------------------------
 2.0 - MAIN MENU
 -------------------------------------------------------------- */
@@ -475,8 +485,8 @@ form .col-1 {
 1.5 - LISTS
 -------------------------------------------------------------- */
 
-dl {
-	text-align: left;
+li {
+	text-align: center;
     padding-left: 64px;
     padding-left: 4rem;
 }
@@ -489,7 +499,7 @@ nav a {
 }
 
 nav li  {
-	padding: 0 20px 0 0;
+	padding: 0 25px 0 0;
 }
 
 /*--------------------------------------------------------------
@@ -682,7 +692,10 @@ nav li {
    padding-bottom: 20px;
 }
 
-
+section.col-1-4:nth-child(2) { 
+	padding-right: 0;
+	margin-bottom: 19px;
+}
 
 #hero p {
   padding: 30px;
