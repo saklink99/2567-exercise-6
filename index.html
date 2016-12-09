@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, intitial-scale=1">
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/main.css">
         <script src="https://maps.googleapis.com/maps/api/js"></script>
         <script>
@@ -20,46 +21,42 @@
           google.maps.event.addDomListener(window, 'load', initialize);
         </script>
     
-    <title>CreativeWorks</title>
+    <title>Creative Works</title>
 </head>
 
 <body>
 
 <!-- ===========HERO & NAV=============== -->
-    <header class="p-t-md" id="hero">
+    <header id="hero">
         <div class="wrapper">
             <div class="row">
-                <figure class="col-1-6">       
-                    <h1><img src="img/logo.png" alt="creativeworks logo"></h1>
-                </figure>
-                <nav class="col-3-5 push-right txt-uppercase" id="smooth-scroll"> 
-                    <ul>
+                <div class="col-1-6 txt-center">       
+                    <h1><img src="img/logo.png" alt="Zendesk"></h1>
+                </div>
+                <nav class="col-3-5 txt-uppercase txt-center" id="smooth-scroll"> 
+                    <ul class="txt-center">
                         <li><a href="#">Home</a></li>
                         <li><a href="#services">Our Services</a></li>
                         <li><a href="#contact">Contact</a></li>
                     </ul>
                 </nav>
             </div>
-            <div class="row p-t-lg p-b-lg">
-                <div class="col-1-2 center-block txt-uppercase txt-center">
-                    <p>Good ideas come First!</p>
-                </div>
+            <div class="p-t-lg p-b-lg col-1-2 center-block txt-uppercase txt-center">	
+             	<p class="txt-center">Good ideas come First!</p>
             </div>
         </div>
     </header>
     
     <!-- ===========OUR SERVICES=============== -->
     
-    <section class="p-t-lg p-b-xl" id="services">
-        <div class="wrapper">
-            <div class="row txt-center">
-                <div class="col-9-12 center-block">
-                    <header>
-                    	<h2 class=" txt-uppercase">Our Services</h2>
-                    	<p class="lead txt-uppercase">Lorem ipsum dolor sit amet, usu <span>nemore oporteat</span> lobortis ad, eos soleat verear cotidieque id. </p>		
-                    </header>
-                    <p>Vis te veri tritani, at quodsi commune has, probo maiestatis ei has. Molestie suscipiantur concludaturque cu has, nam ne omnesque antiopam, & indoctum complectitur pro ad. Ea cum diam malorum vivendum, vel quod commodo repudiandae et. </p>
-                </div>
+    <section class="p-t-lg" id="services">
+        <div class="wrapper txt-center">	
+            <div class="col-9-12 center-block">
+                <header>
+                    <h2 class="txt-uppercase">Our Services</h2>
+                    <p class="txt-uppercase" id="lead"> Lorem ipsum dolor sit amet, usu <span>nemore oporteat</span> lobortis ad, eos soleat verear cotidieque id. </p>		
+                </header>
+                <p>Vis te veri tritani, at quodsi commune has, probo maiestatis ei has. Molestie suscipiantur concludaturque cu has, nam ne omnesque antiopam, & indoctum complectitur pro ad. Ea cum diam malorum vivendum, vel quod commodo repudiandae et. </p>
             </div>
             <div class="row txt-center">
                 <section class="col-1-4">
@@ -100,27 +97,27 @@
     
     
     <footer class="p-t-lg p-b-lg" id="contact">
-        <div class="wrapper">
-            <div class="row txt-center">
-                <div class="col-9-12 center-block">
-                    <h2 class=" txt-uppercase">Contact Us</h2>
-                    <p>Vis te veri tritani, at quodsi commune has, probo maiestatis ei has. Molestie suscipiantur concludaturque cu has, nam ne omnesque antiopam, indoctum complectitur pro ad. Ea cum diam malorum vivendum, vel quod commodo repudiandae et. </p>
-                </div>
+        <div class="wrapper txt-center">
+            <div class="col-9-12 center-block">
+                <h2 class=" txt-uppercase">Contact Us</h2>
+                <p>Vis te veri tritani, at quodsi commune has, probo maiestatis ei has. Molestie suscipiantur concludaturque cu has, nam ne omnesque antiopam, indoctum complectitur pro ad. Ea cum diam malorum vivendum, vel quod commodo repudiandae et. </p>
             </div>
             <div class="row">
-                <section class="col-1-2-lg">
+                <section class="col-1-2-lg txt-center">
                     <div class="row">
                         <div class="col-1-2">
                             <h4>Address</h4>
                             <h5>Zendesk</h5>
-                            <p class="m-t-0 m-b-lg">123 Fake Street<br/>
-                            Fakersvill, FA 12345-1234</p>
-                            <ul>
-                                <li><a href="tel:123.123.1234"><span>Phone:</span> 123.123.1234<br/></a></li>
-                                <li><a href="tel:123.123.1234"><span>Fax:</span> 123.123.1234<br/></a></li>
-                                <li><a href="mailto:hello@zendesk.com"><span>Email:</span> hello@zendesk.com<br/></a></li>
-                                <li><a href="skype:Zendesk"><span>Skype:</span> Zendesk</a></li>
-                            </ul>
+                            <address>
+                                <p id="m-b-lg">123 Fake Street<br/>
+                                Fakersvill, FA 12345-1234</p>
+                                <ul class="txt-center">
+                                    <li><a href="tel:+1231231234">Phone: <span>123.123.1234</span><br/></a></li>
+                                    <li><a href="tel:+12311231234">Fax: <span>123.123.1234</span><br/></a></li>
+                                    <li><a href="mailto:hello@zendesk.com">Email: <span>hello@zendesk.com</span><br/></a></li>
+                                    <li><a href="skype:Zendesk">Skype: <span>Zendesk</span></a></li>
+                                </ul>
+                            </address>
                         </div>
                         <div class="col-1-2" id="map">
                         </div>
@@ -129,20 +126,16 @@
                 <div class="col-1-2-lg p-t-lg">
                     <form class="row">
                         <div class="col-1-2">
-                        <label>First &amp; Last Name:</label>
-                        <input  name="name" type="text" value="" placeholder="Name"/>
+                        <label for="name">First &amp; Last Name:</label>
+                        <input id="name" name="name" type="text" placeholder="Name"/>
                         </div>
                         <div class="col-1-2">
-                            <label>Your email:</label>
-                            <input name="email" type="text" placeholder="Email" />
+                            <label for="email">Your email:</label>
+                            <input id="email" name="email" type="email" placeholder="Email"/>
                         </div>
-                        <div class="col-1">
-                            <label for="message">Your message:</label>
-                            <textarea id="message" name="message" rows="7" placeholder="Message"></textarea>
-                            <div class="txt-center">
-                                <a href="#">Submit</a>
-                            </div>
-                        </div>
+                        <label for="message">Your message:</label>
+                        <textarea id="message" name="message" rows="7" placeholder="Message"></textarea>
+                        <p class="txt-center"><a href="#">Submit</a></p>
                     </form>
                 </div>
             </div>

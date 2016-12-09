@@ -31,6 +31,25 @@ body, form a, li a, nav a{
 	color: #fff;
 }
 
+nav a:hover, #hero p  {
+	background-color: rgba(255,255,255,.5);
+}
+
+nav a, form a, li a  {
+	text-decoration: none;
+}
+
+nav li, form a  {
+	display:inline-block;
+}
+
+li span, form a {
+	font-weight: 600;
+}
+
+#contact li a:hover, form a:hover {
+	color: #146c57;
+}
 /*--------------------------------------------------------------
 1.0 - TYPOGRAPHY
 -------------------------------------------------------------- */
@@ -43,12 +62,12 @@ body {
 /*--------------------------------------------------------------
 1.1 - BODY
 -------------------------------------------------------------- */
-.lead {
+#lead {
 	font-weight: 500;
 	font-size: 1.2rem;
 }
 
-.lead span {
+#lead span {
 	color:#77cae6;
 	font-weight: 800;
 }
@@ -58,9 +77,7 @@ body {
 -------------------------------------------------------------- */
 #hero p {
     font-size: 5.5rem;
-    background-color: rgba(255,255,255,.5);
     line-height: 5rem;
-    text-align: center;
     padding: 20px;
 }
 
@@ -77,58 +94,58 @@ h5 {
 	margin-bottom: 0;
 }
 
+
+h1, h2, h3, h4 {
+	font-family: 'raleway', sans-serif;
+}
+
 /*--------------------------------------------------------------
 1.4 - FORMS
 -------------------------------------------------------------- */
 form {
 	padding-left:20px;
 }
-form div {
+
+form div, input, textarea {
 	padding: 10px;
 }
-form .col-1 {
-	padding-right: 2rem !important;
-}
+
 label {
 	display:none;
 }
 input, textarea {
 	background-color: #19896e;
 	width: 100%;
-	padding: 10px;
 	border:1px solid #19896e;
 }
 input:focus, textarea:focus {
 	outline:none;
 	border:1px solid #115e4b;
 }
-::-webkit-input-placeholder {
-   color: #fff;
+
+::-webkit-input-placeholder { 
+	  color: #ffffff;
+	
+}
+::-moz-placeholder {
+	  color: #ffffff;
+	  
+}
+:-ms-input-placeholder { 
+	  color: #ffffff; 
+}
+:-moz-placeholder { 
+	  color: #ffffff;
 }
 
-:-moz-placeholder { /* Firefox 18- */
-   color: #fff;  
-}
-
-::-moz-placeholder {  /* Firefox 19+ */
-   color: #fff;  
-}
-
-:-ms-input-placeholder {  
-   color: #fff;  
-}
 form a {
 	margin-top: 20px;
 	padding:10px 20px;
 	background-color: #146c57;
 	text-transform: uppercase;
-	text-decoration: none;
-	display:inline-block;
-	font-weight: 600;
 }
 
 form a:hover {
-	color: #146c57;
 	background-color: #fff;
 	
 }
@@ -137,28 +154,14 @@ form a:hover {
 -------------------------------------------------------------- */
 #contact ul li {
 	display: inline;
-	padding-left: 0;
 }
 
-#contact ul, nav ul {
+#contact ul, nav ul, #contact ul li {
 	padding-left: 0;
 }
-
-
 
 li {
 	font-weight:100;
-}
-li span {
-	font-weight: 600;
-}
-
-li a {
-	text-decoration: none;
-}
-
-#contact li a:hover {
-	color: #146c57;
 }
  
 
@@ -171,20 +174,15 @@ nav {
 }
 
 nav li  {
-	display:inline-block;
 	list-style: none;
 	padding: 0 20px;
     font-weight: 700;
 }
 
 nav a {
-	text-decoration: none;
 	padding:10px;
 }
 
-nav a:hover {
-	background-color: rgba(255,255,255,.5);
-}
 
 
 
@@ -193,7 +191,9 @@ nav a:hover {
 -------------------------------------------------------------- */
 *, *:after, *:before {
 	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	-o-box-sizing: border-box;
 	box-sizing: border-box;
 }
 
@@ -232,13 +232,13 @@ figure {
 	float: left;
 }
 
+#services{
+	padding-bottom: 100px
+}
 
 /*--------------------------------------------------------------
 3.1 - SINGLE COLUMNS
 -------------------------------------------------------------- */
-.col-1 {
-	width: 100%;
-}
 
 .col-1-2, .col-1-2-lg {
 	width: 50%;
@@ -304,6 +304,7 @@ figure {
 
 .col-3-5 {
 	width: 60%;
+	float: right !important;
 }
 
 .col-2-6 {
@@ -378,8 +379,10 @@ figure {
   background: url(../img/hero.jpeg) no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
+  -ms-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  padding-top: 20px;
 }
 
 #map {
@@ -416,7 +419,7 @@ figure {
 	padding-top: 10px;
 }
 .p-t-md {
-	padding-top: 20px;
+	
 }
 .p-t-lg {
 	padding-top: 50px;
@@ -424,14 +427,10 @@ figure {
 .p-b-lg {
 	padding-bottom: 50px;
 }
-.p-b-xl {
-	padding-bottom: 100px;
-}
-.m-t-0 {
-	margin-top: 0;
-}
-.m-b-lg {
+
+#m-b-lg {
 	margin-bottom: 50px;
+	margin-top: 0;
 }
 /*--------------------------------------------------------------
 5.4 - ALIGNMENTS
@@ -442,9 +441,6 @@ figure {
 	float: none !important;
 }
 
-.push-right {
-	float: right !important;
-}
 
 
 
@@ -577,7 +573,7 @@ img {
     padding-top: 1px;
 }
 
-.m-b-lg {
+#m-b-lg {
     margin-bottom: 0px;
 }
 
@@ -601,10 +597,6 @@ h4 {
 5.4 - ALIGNMENTS
 -------------------------------------------------------------- */
 
-.col-1-6, nav, section.col-1-2-lg, li {	
-	text-align: center;
-}
-	
 	
 	
 }
